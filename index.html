@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Tag styling */
+        p { 
+            color: green;
+        }
+
+        /* Class styling */
+        .template1 {
+            background-color: dodgerblue;
+            font-size: 150%; 
+        }
+
+        /* ID styling */
+        #image1 {
+            border: 12px solid grey;
+            width: 320px;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        // Javascript comment voor 1 regel
+        /*
+
+            javascript comment voor meer regels 
+
+        */
+       let a = 6;               // number
+       let b = "Tekst";         // string
+       let c = true;            // boolean
+
+       a = "Tekst2";
+
+       // const mag je eenmalig de waarde instellen
+       const d = 12;
+       // d = 34; Const mag niet overgeschreven worden
+
+        // Function declaration
+        function addition() {
+            // Hier kunnen we javascript uitvoeren
+            let invoer1 = document.getElementById("invoer1").value;
+
+            let totaal = invoer1 + 7;
+            totaal = totaal + 3; // totaal += 3;
+
+            alert("Totaal is " + totaal);
+        }
+
+        function addition2(getal, getal2) {
+            let totaal = getal + getal2;
+            alert("Uitkomst is " + totaal);
+        }
+
+        // Function call
+        addition();
+        addition2(d, 897);
+
+    </script>
+</head> 
+<body>
+    <!-- Verschillende teksten -->
+    <h1>Mijn website</h1>
+    <h2>Dit is mijn eerste website</h2>
+
+    <!-- Paragraaf is een tekst met ruimte er boven en onder -->
+    <p>Dit is mijn eerste paragraaf</p>
+    <p>Dit is mijn tweede paragraaf</p>
+
+    <span style="color: red; background-color: rgb(183, 247, 247);">Dit is mijn eerste span</span>
+    <span>Dit is mijn tweede span</span> 
+
+    <!-- Lijsten -->
+    <ul>
+        <li class="template1 template2 zzzzzzzzz">Item 1</li>
+        <li>Item 2</li>
+        <li class="template1">Item 3</li>
+    </ul>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <table>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+        <tr>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+        </tr>
+    </table>
+
+    <img id="image1" src="HTML_Blog-scaled.jpeg" width="500">
+
+    <br>
+
+    <a href="http://www.w3schools.com">
+        Klik hier.
+    </a>
+
+    <input type="number" id="invoer1">
+
+    <button type="button" onclick="addition()">
+        Addition
+    </button>
+
+</body>
+</html>
